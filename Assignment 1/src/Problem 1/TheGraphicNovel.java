@@ -71,6 +71,6 @@ class ExamplesGraphicNovel {
   ExamplesGraphicNovel() {
     g1 = new GraphicNovel("Maus", "Spiegelman", "Spiegelman", 1980, 17.90, true);
     g2 = new GraphicNovel("Logicomix", "Doxiadis", "Papadatos", 2009, 21.00, false);
-    g3 = new GraphicNovel("Objects 1", "Jason Hemann", "Fady", 2025, 50_000, true); // no comma
+    g3 = new GraphicNovel("Objects 1", "Jason Hemann", "Fady", 2025, 50_000, true);
   }
 }
