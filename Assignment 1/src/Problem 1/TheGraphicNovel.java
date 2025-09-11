@@ -48,9 +48,9 @@ class GraphicNovel {
 class ExamplesGraphicNovel {
   /* TEMPLATE
    Fields:
-   ... this.g1 ... -- GraphicNovel
-   ... this.g2 ... -- GraphicNovel
-   ... this.g3 ... -- GraphicNovel
+   ... this.maus ... -- GraphicNovel
+   ... this.logicomix ... -- GraphicNovel
+   ... this.objects_1 ... -- GraphicNovel
    */
 
   GraphicNovel maus = new GraphicNovel("Maus", "Spiegelman", "Spiegelman", 1980, 17.90, true);
