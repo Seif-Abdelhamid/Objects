@@ -58,7 +58,7 @@ class Swap implements Action {
 }
 
 class ExamplesGame {
-    // six resources (include the three specified)
+    // six resources
     Resource iDidntKnow = new Denial("knowledge", 51);
     Resource witness = new Bribe("innocent witness", 49);
     Resource iWontDoItAgain = new Apology("I won't do it again", false);
@@ -74,3 +74,4 @@ class ExamplesGame {
     Action swap2 = new Swap(this.iDidntKnow, this.witness);
 
 }
+
