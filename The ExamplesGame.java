@@ -63,13 +63,14 @@ class ExamplesGame {
     Resource witness = new Bribe("innocent witness", 49);
     Resource iWontDoItAgain = new Apology("I won't do it again", false);
 
-    Resource Bullshit = new Denial("action", 30);
-    Resource Whatever = new Bribe("journalist", 52);
-    Resource FuckJason = new Apology("We regret the oversight", true);
+    Resource Fady = new Denial("action", 30);
+    Resource Jason = new Bribe("journalist", 52);
+    Resource Sophia = new Apology("We regret the oversight", true);
 
     Action purchase1 = new Purchase(5, this.Bullshit);
     Action purchase2 = new Purchase(12, this.iWontDoItAgain);
 
     Action swap1 = new Swap(this.FuckJason, this.Whatever);
     Action swap2 = new Swap(this.iDidntKnow, this.witness);
+
 }
