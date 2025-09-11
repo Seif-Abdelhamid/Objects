@@ -1,11 +1,30 @@
 // A Sundae is one of:
-// - Scoop
-// - Topping
+//  - new Scoop(String flavor)
+//  - new Topping(Sundae inner, String name)
+
+// Interpretation:
+//   Scoop: a single scoop with a flavor
+//   Topping: a topping layered on top of another Sundae
+
+// TEMPLATE for a Sundae:
+//   if (s instanceof Scoop)   { ((Scoop) s).flavor; }
+//   if (s instanceof Topping) { ((Topping) s).inner; ((Topping) s).name; }
 
 // to represent a Sundae
-interface Sundae {}
+interface Sundae { }
 
-// a Scoop is a (make-scoop String)
+// DATA DEFINITION: Scoop
+
+// Fields:
+//  - flavor : String
+
+// Interpretation: the flavor of this scoop
+
+// Constructor Signature:
+//   Scoop(String flavor) -> Scoop
+
+// TEMPLATE:
+//   this.flavor
 class Scoop implements Sundae {
     String flavor;
 
@@ -14,7 +33,19 @@ class Scoop implements Sundae {
     }
 }
 
-// a Topping is a (make-topping Sundae String)
+// DATA DEFINITION: Topping
+
+// Fields:
+//  - inner : Sundae
+//  - name  : String
+
+// Interpretation: a topping called `name` placed on top of `inner`
+
+// Constructor Signature:
+//   Topping(Sundae inner, String name) -> Topping
+// TEMPLATE (inside Topping methods):
+//   this.inner   // (apply Sundae template)
+//   this.name
 class Topping implements Sundae {
     Sundae inner;
     String name;
@@ -25,7 +56,8 @@ class Topping implements Sundae {
     }
 }
 
-// examples and tests for sundaes
+// EXAMPLES CLASS
+// for illustrating the data definitions
 class ExamplesSundae {
     // build yummy
     Sundae choc = new Scoop("chocolate");
@@ -39,4 +71,3 @@ class ExamplesSundae {
     Sundae withFudge = new Topping(withChocoSprinkles, "fudge");
     Sundae noThankYou = new Topping(withFudge, "plum sauce");
 }
-
