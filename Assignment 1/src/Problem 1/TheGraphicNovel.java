@@ -53,7 +53,7 @@ class ExamplesGraphicNovel {
    ... this.g3 ... -- GraphicNovel
    */
 
-  GraphicNovel g1 = new GraphicNovel("Maus", "Spiegelman", "Spiegelman", 1980, 17.90, true);
-  GraphicNovel g2 = new GraphicNovel("Logicomix", "Doxiadis", "Papadatos", 2009, 21.00, false);
-  GraphicNovel g3 = new GraphicNovel("Objects 1", "Jason Hemann", "Fady", 2025, 50000, true);
+  GraphicNovel maus = new GraphicNovel("Maus", "Spiegelman", "Spiegelman", 1980, 17.90, true);
+  GraphicNovel logicomix = new GraphicNovel("Logicomix", "Doxiadis", "Papadatos", 2009, 21.00, false);
+  GraphicNovel objects_1 = new GraphicNovel("Objects 1", "Jason Hemann", "Fady", 2025, 50000, true);
 }
