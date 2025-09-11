@@ -27,10 +27,16 @@ class Topping implements Sundae {
 
 // examples and tests for sundaes
 class ExamplesSundae {
-    // a "chocolate" scoop topped by "rainbow sprinkles" topped by "caramel" topped by "whipped cream"
-    Sundae yummy = new Topping(new Topping(new Topping(new Scoop("chocolate"), "rainbow sprinkles"), "caramel"), "whipped cream");
+    // build yummy
+    Sundae choc = new Scoop("chocolate");
+    Sundae withSprinkles = new Topping(choc, "rainbow sprinkles");
+    Sundae withCaramel = new Topping(withSprinkles, "caramel");
+    Sundae yummy = new Topping(withCaramel, "whipped cream");
 
-    // a "vanilla" scoop topped by "chocolate sprinkles" topped by "fudge" topped by "plum sauce"
-    Sundae noThankYou = new Topping(new Topping(new Topping(new Scoop("vanilla"), "chocolate sprinkles"), "fudge"), "plum sauce");
-
+    // build noThankYou
+    Sundae vanilla = new Scoop("vanilla");
+    Sundae withChocoSprinkles = new Topping(vanilla, "chocolate sprinkles");
+    Sundae withFudge = new Topping(withChocoSprinkles, "fudge");
+    Sundae noThankYou = new Topping(withFudge, "plum sauce");
 }
+
