@@ -124,7 +124,6 @@ class Swap implements Action {
 }
 
 // EXAMPLES CLASS
-// Purpose: Provide concrete examples of Resources and Actions
 // for testing and illustration of the data definitions
 class ExamplesGame {
   // Six Resource examples
@@ -145,3 +144,4 @@ class ExamplesGame {
   Action swap2 = new Swap(this.iDidntKnow, this.witness);
 
 }
+
