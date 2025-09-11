@@ -129,10 +129,10 @@ class ExamplesGame {
     Resource Jason = new Apology("We regret the oversight", true);
 
     // Two Purchase Actions
-    Action purchase1 = new Purchase(5, this.Seif);
-    Action purchase2 = new Purchase(12, this.iWontDoItAgain);
+    Action purchase1 = new Purchase(5, Seif);
+    Action purchase2 = new Purchase(12, iWontDoItAgain);
 
     // Two Swap Actions
-    Action swap1 = new Swap(this.Jason, this.Fady);
-    Action swap2 = new Swap(this.iDidntKnow, this.witness);
+    Action swap1 = new Swap(Jason, Fady);
+    Action swap2 = new Swap(iDidntKnow, witness);
 }
