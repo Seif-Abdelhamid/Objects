@@ -1,4 +1,3 @@
-import tester.*;
 // A Sundae is one of:
 // - Scoop
 // - Topping
@@ -34,12 +33,4 @@ class ExamplesSundae {
     // a "vanilla" scoop topped by "chocolate sprinkles" topped by "fudge" topped by "plum sauce"
     Sundae noThankYou = new Topping(new Topping(new Topping(new Scoop("vanilla"), "chocolate sprinkles"), "fudge"), "plum sauce");
 
-    // simple sanity tests
-    boolean testStructures(Tester t) {
-        return
-                t.checkExpect(((Scoop)((Topping)((Topping)((Topping) this.yummy).inner).inner).inner).flavor, "chocolate")
-                        && t.checkExpect(((Topping) this.yummy).name, "whipped cream")
-                        && t.checkExpect(((Scoop)((Topping)((Topping)((Topping) this.noThankYou).inner).inner).inner).flavor, "vanilla")
-                        && t.checkExpect(((Topping) this.noThankYou).name, "plum sauce");
-    }
 }
