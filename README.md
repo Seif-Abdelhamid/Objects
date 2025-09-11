@@ -1,6 +1,6 @@
 # Introduction to Object‑Oriented Design
 
-**Instructors**: Seif Abdelhamid · Fady Nakhla  
+**Students**: Seif Abdelhamid · Fady Nakhla  
 **Semester**: Fall 2025
 
 ---
