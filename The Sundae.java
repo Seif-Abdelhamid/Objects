@@ -43,6 +43,7 @@ class Scoop implements Sundae {
 
 // Constructor Signature:
 //   Topping(Sundae inner, String name) -> Topping
+
 // TEMPLATE (inside Topping methods):
 //   this.inner   // (apply Sundae template)
 //   this.name
@@ -71,3 +72,4 @@ class ExamplesSundae {
     Sundae withFudge = new Topping(withChocoSprinkles, "fudge");
     Sundae noThankYou = new Topping(withFudge, "plum sauce");
 }
+
