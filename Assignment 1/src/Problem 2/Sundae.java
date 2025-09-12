@@ -3,7 +3,7 @@
 //  - new Topping(Sundae inner, String name)
 
 // to represent a Sundae
-interface ISundae { }
+interface Sundae { }
 
 // DATA DEFINITION: Scoop
 // Interpretation: a single scoop with a flavor
@@ -22,11 +22,11 @@ class Scoop implements ISundae {
 
 // DATA DEFINITION: Topping
 // Interpretation: a topping named `name` placed on top of `inner`
-class Topping implements ISundae {
-  ISundae inner;
+class Topping implements Sundae {
+  Sundae inner;
   String name;
 
-  Topping(ISundae inner, String name) {
+  Topping(Sundae inner, String name) {
     this.inner = inner;
     this.name = name;
   }
@@ -53,13 +53,13 @@ class ExamplesSundae {
      */
 
   // build yummy
-  ISundae choc = new Scoop("chocolate");
-  ISundae withSprinkles = new Topping(choc, "rainbow sprinkles");
-  ISundae withCaramel = new Topping(withSprinkles, "caramel");
-  ISundae yummy = new Topping(withCaramel, "whipped cream");
+  Sundae choc = new Scoop("chocolate");
+  Sundae withSprinkles = new Topping(choc, "rainbow sprinkles");
+  Sundae withCaramel = new Topping(withSprinkles, "caramel");
+  Sundae yummy = new Topping(withCaramel, "whipped cream");
 
   // build noThankYou
-  ISundae vanilla = new Scoop("vanilla");
-  ISundae withChocoSprinkles = new Topping(vanilla, "chocolate sprinkles");
-  ISundae withFudge = new Topping(withChocoSprinkles, "fudge");
-  ISundae noThankYou = new Topping(withFudge, "plum sauce");
+  Sundae vanilla = new Scoop("vanilla");
+  Sundae withChocoSprinkles = new Topping(vanilla, "chocolate sprinkles");
+  Sundae withFudge = new Topping(withChocoSprinkles, "fudge");
+  Sundae noThankYou = new Topping(withFudge, "plum sauce");
