@@ -110,9 +110,9 @@ class ExamplesGame {
    ... this.iDidntKnow ...     -- Resource
    ... this.witness ...        -- Resource
    ... this.iWontDoItAgain ... -- Resource
-   ... this.Seif ...           -- Resource
-   ... this.Fady ...           -- Resource
-   ... this.Jason ...          -- Resource
+   ... this.seif ...           -- Resource
+   ... this.fady ...           -- Resource
+   ... this.jason ...          -- Resource
    ... this.purchase1 ...      -- Action
    ... this.purchase2 ...      -- Action
    ... this.swap1 ...          -- Action
@@ -124,15 +124,15 @@ class ExamplesGame {
     Resource witness = new Bribe("innocent witness", 49);
     Resource iWontDoItAgain = new Apology("I won't do it again", false);
 
-    Resource Seif = new Denial("action", 30);
-    Resource Fady = new Bribe("journalist", 52);
-    Resource Jason = new Apology("We regret the oversight", true);
+    Resource seif = new Denial("action", 30);
+    Resource fady = new Bribe("journalist", 52);
+    Resource jason = new Apology("We regret the oversight", true);
 
     // Two Purchase Actions
-    Action purchase1 = new Purchase(5, Seif);
+    Action purchase1 = new Purchase(5, seif);
     Action purchase2 = new Purchase(12, iWontDoItAgain);
 
     // Two Swap Actions
-    Action swap1 = new Swap(Jason, Fady);
+    Action swap1 = new Swap(jason, fady);
     Action swap2 = new Swap(iDidntKnow, witness);
 }
