@@ -7,7 +7,7 @@ interface Sundae { }
 
 // DATA DEFINITION: Scoop
 // Interpretation: a single scoop with a flavor
-class Scoop implements ISundae {
+class Scoop implements Sundae {
   String flavor;
 
   Scoop(String flavor) {
