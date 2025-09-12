@@ -43,6 +43,3 @@ Prerequisites include familiarity with systematic program design and basic compu
 - Created by **Seif Abdelhamid** & **Fady Nakhla**  
 
 ---
-
----
-
